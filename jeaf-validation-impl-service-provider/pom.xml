@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.anaptecs.jeaf.validation</groupId>
+		<artifactId>jeaf-validation-impl-project</artifactId>
+		<version>1.6.0-SNAPSHOT</version>
+	</parent>
+
+	<name>JEAF Validation Impl Service Provider</name>
+	<artifactId>jeaf-validation-impl-service-provider</artifactId>
+	<packaging>jar</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.anaptecs.jeaf.validation</groupId>
+			<artifactId>jeaf-validation-impl</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.anaptecs.jeaf.core</groupId>
+			<artifactId>jeaf-core-service-channel-api</artifactId>
+			<version>${jeaf.core.api.version}</version>
+		</dependency>
+	</dependencies>
+</project>
