@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.anaptecs.jeaf.validation</groupId>
 		<artifactId>jeaf-validation-impl-project</artifactId>
-		<version>1.6.1-SNAPSHOT</version>
+		<version>1.6.2-SNAPSHOT</version>
 	</parent>
 
 	<name>JEAF Validation Impl Spring</name>
