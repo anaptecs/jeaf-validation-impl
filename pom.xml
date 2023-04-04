@@ -25,7 +25,7 @@
 	</scm>
 	
 	<properties>
-		<jeaf.validation.api.version>1.6.0</jeaf.validation.api.version>
+		<jeaf.validation.api.version>1.6.1</jeaf.validation.api.version>
 		<jeaf.core.api.version>1.6.19</jeaf.core.api.version>
 		
 		<jeaf.tools.api.version>1.6.20</jeaf.tools.api.version>
