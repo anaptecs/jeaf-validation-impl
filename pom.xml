@@ -25,13 +25,13 @@
 	</scm>
 	
 	<properties>
-		<jeaf.validation.api.version>1.6.1</jeaf.validation.api.version>
-		<jeaf.core.api.version>1.6.19</jeaf.core.api.version>
+		<jeaf.validation.api.version>1.8.0</jeaf.validation.api.version>
+		<jeaf.core.api.version>1.8.0</jeaf.core.api.version>
 		
-		<jeaf.tools.api.version>1.6.20</jeaf.tools.api.version>
-		<jeaf.x-fun.impl.version>1.6.23</jeaf.x-fun.impl.version>
+		<jeaf.tools.api.version>1.8.0</jeaf.tools.api.version>
+		<jeaf.x-fun.impl.version>1.8.0</jeaf.x-fun.impl.version>
 		
-		<spring.boot.version>2.7.10</spring.boot.version>
+		<spring.boot.version>2.7.12</spring.boot.version>
 	</properties>
 	
 	<modules>
