@@ -24,6 +24,12 @@
 			<version>${jeaf.tools.api.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-core</artifactId>
+			<optional>true</optional>
+		</dependency>
+
 		<!-- Runtime dependencies -->
 		<dependency>
 			<groupId>com.anaptecs.jeaf.x-fun</groupId>

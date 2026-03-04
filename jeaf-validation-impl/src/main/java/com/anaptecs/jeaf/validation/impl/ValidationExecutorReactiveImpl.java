@@ -8,12 +8,18 @@ import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 
 import com.anaptecs.jeaf.tools.api.validation.ValidationTools;
-import com.anaptecs.jeaf.validation.api.ValidationExecutor;
+import com.anaptecs.jeaf.validation.api.ValidationExecutorReactive;
+import reactor.core.publisher.Mono;
 
-public class ValidationExecutorImpl implements ValidationExecutor {
+public class ValidationExecutorReactiveImpl implements ValidationExecutorReactive {
 
   @Override
-  public void validateRequest(Class<?> pService, Object... pRequestParameters) {
+  public Mono<Void> validateRequest(Class<?> pService, Object... pRequestParameters) {
+    return Mono.create(v -> this.validateRequestInternal(pService, pRequestParameters));
+
+  }
+
+  private void validateRequestInternal(Class<?> pService, Object... pRequestParameters) {
     // Validate all parameters
     Set<ConstraintViolation<Object>> lConstraintViolations = new HashSet<>();
     for (Object lNext : pRequestParameters) {
@@ -53,12 +59,12 @@ public class ValidationExecutorImpl implements ValidationExecutor {
   }
 
   @Override
-  public void validateResponse(Class<?> pService, Object pResponseObject) {
-    ValidationTools.getValidationTools().enforceObjectValidation(pResponseObject);
+  public Mono<Void> validateResponse(Class<?> pService, Object pResponseObject) {
+    return Mono.create(v -> ValidationTools.getValidationTools().enforceObjectValidation(pResponseObject));
   }
 
   @Override
-  public void validateObject(Object pObject) {
-    ValidationTools.getValidationTools().enforceObjectValidation(pObject);
+  public Mono<Void> validateObject(Object pObject) {
+    return Mono.create(v -> ValidationTools.getValidationTools().enforceObjectValidation(pObject));
   }
 }
