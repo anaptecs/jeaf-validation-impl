@@ -50,7 +50,7 @@
 		<jeaf.tools.api.version>1.8.0</jeaf.tools.api.version>
 		<jeaf.x-fun.impl.version>1.8.0</jeaf.x-fun.impl.version>
 		
-		<spring.boot.version>2.7.12</spring.boot.version>
+		<spring.boot.version>4.0.3</spring.boot.version>
 	</properties>
 	
 	<modules>
