@@ -62,9 +62,4 @@ public class ValidationExecutorReactiveImpl implements ValidationExecutorReactiv
   public Mono<Void> validateResponse(Class<?> pService, Object pResponseObject) {
     return Mono.create(v -> ValidationTools.getValidationTools().enforceObjectValidation(pResponseObject));
   }
-
-  @Override
-  public Mono<Void> validateObject(Object pObject) {
-    return Mono.create(v -> ValidationTools.getValidationTools().enforceObjectValidation(pObject));
-  }
 }
