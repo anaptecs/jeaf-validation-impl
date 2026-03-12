@@ -44,7 +44,7 @@
 
 
 	<properties>
-		<jeaf.validation.api.version>1.8.1-SNAPSHOT</jeaf.validation.api.version>
+		<jeaf.validation.api.version>1.9.0</jeaf.validation.api.version>
 		<jeaf.core.api.version>1.8.0</jeaf.core.api.version>
 		
 		<jeaf.tools.api.version>1.8.0</jeaf.tools.api.version>
